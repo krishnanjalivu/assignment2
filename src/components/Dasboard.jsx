@@ -1,5 +1,5 @@
 import React from 'react';
-
+import image from "../assets/moptro logo-1.png";
 import Navbar from './Navbar';
 
 
@@ -10,7 +10,7 @@ function Dashboard() {
     <Navbar />
     <div className='container'>
     <div className='mop'>
-    
+    <img src={image} height={65} width={65}></img>
     <div className='mopside'>4</div>
     </div>
     <div className='productivity'>

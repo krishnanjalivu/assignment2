@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import employeesData from '../data.json'; 
 import Navbar from './Navbar';
 import Search from "../assets/search-interface-symbol.png";
-
+import image from "../assets/moptro logo-1.png";
 const EmployeeList=()=> {
   const [employees, setEmployees] = useState(employeesData); 
   const [searchTerm, setSearchTerm] = useState('');
@@ -41,6 +41,7 @@ const EmployeeList=()=> {
      
         <div className='employee'>
         <div className='mop'>
+        <img src={image} height={65} width={65}></img>
           <div className='mopside'>4</div>
         </div>
         <div className='search'>
