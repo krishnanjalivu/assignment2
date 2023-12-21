@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import employeesData from '../data.json'; 
 import Navbar from './Navbar';
+import Search from "../assets/search-interface-symbol.png";
 
 const EmployeeList=()=> {
   const [employees, setEmployees] = useState(employeesData); 
@@ -45,7 +45,7 @@ const EmployeeList=()=> {
         </div>
         <div className='search'>
           <input type="text" placeholder="Search by name" onChange={handleSearchChange} />
-          <div className='searchicon'><img src="/src/assets/search-interface-symbol.png" alt='search' height={25} width={25}></img></div>
+          <div className='searchicon'><img src={Search} height={25} width={25}></img></div>
           </div>
           {filteredEmployees.map(renderEmployeeCard)}
         </div>
