@@ -107,8 +107,8 @@ width: 80px;
 height: 80px;
 margin-top: 20px;
 position:relative;
-background-image: url(./assets/moptro\ logo-1.png);
-background-repeat: no-repeat;
+  background-image:url('/src/assets/moptro\ logo-1.png') 0% 0% no-repeat padding-box;
+mix-blend-mode: normal;
 opacity: 1
 }
 .productivity
