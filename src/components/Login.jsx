@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import Logo from "../assets/Group 3@2x.png";
 const Login=()=> {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,9 +21,9 @@ const Login=()=> {
     <div className='container'>
     <form onSubmit={handleSubmit} >
      <div className='login'>
-    <img src="/src/assets/Group 3@2x.png" alt="logo" height={100} width={100}></img>
+    <img src={Logo} alt="logo" height={100} width={100}></img>
        <p>We are electric</p>
-    <div></div>
+    
       <input
         type="email"
         id="email"
